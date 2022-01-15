@@ -7,3 +7,5 @@
 5 == '5' // javascript reconhece pois mesmo que o 5 seja string ele ai é 5
 5 === '5'   // geral false pois 3 = significa identico 
 // ! quer dizer negação       && conjução      || disjunção
+
+// outros parametros a ser adicionado como ? : 
