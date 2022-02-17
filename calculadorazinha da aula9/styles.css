@@ -1,0 +1,31 @@
+body{
+    font: normal 15px Arial;
+    margin: 0;
+}
+div#main{
+    background: rgb(224, 224, 226);
+    margin-top: 0;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+
+    
+}
+input{
+    font: normal 18px Arial;
+    margin: 3px;
+    
+}
+
+div#res{
+    width: 700px;
+    height: 100px;
+    background: rgb(202, 188, 188);
+    font: normal 15px Lucida Console;
+    text-align: center;
+
+}
+
+input#butao{
+    width: 95px;
+}
