@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p id="pe1">Peça 1</p>
+            Quantidade: <input type="number" name="roupa1" id="roupa1">
+            <input type="button" value="Valor" onclick="valor()">
+            <div id="res">Valor a Pagar</div>
+        </div>
+
+        <div>
+            <p id="pe2">Peça 2</p>
+            Quantidade: <input type="number" name="roupa2" id="roupa2">
+            <input type="button" value="Valor" onclick="valor1()">
+            <div id="res2">Valor a Pagar</div>
+            
+        </div>
+
+    </div>
+   
+    <script>
+
+        function valor(){
+            var preco = document.querySelector('input#roupa1')
+            var pagar = document.querySelector('div#res')
+            var clothes = Number(preco.value)
+            var soma = clothes * 5.25
+            pagar.innerHTML = `Sua compra custou R$ ${soma}` 
+        }
+    </script>
+</body>
+</html>

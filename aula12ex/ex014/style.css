@@ -1,0 +1,40 @@
+body{
+    background: rgb(26, 6, 104);
+    font: normal 15px Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+ background: white;
+ border-radius: 10px;
+ padding: 15px;
+ width: 500px;
+ margin: auto;
+ box-shadow: 5px 5px 10px rgba(94, 13, 13, 0.219);
+
+}
+div{
+    text-align: center;
+    padding: 5px;
+    font: normal 15px Serif;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div#msg:hover{
+    background: rgb(186, 181, 235);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(104, 107, 103);
+}
+img{
+    max-width: 250x;
+    max-height: 250px;
+}

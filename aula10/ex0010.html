@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Velocidade</title>
+
+
+    <style>
+        body{
+            font: normal 18px Arial;
+            margin: 0;
+        }
+
+        #main{
+            background: rgb(213, 213, 236);
+            text-align: center;
+            height: 250px;
+            
+        }
+
+        input{
+            margin: 5px;
+            height: 25px;
+            width: 150px;
+        }
+
+        div#res{
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Sistema de Multas</h1>
+        <p>Velocidade do carro</p>
+        <input type="number" name="vkm" id="vkm">
+        
+        <div id="seila">
+            <input type="button" value="Calcular" onclick="velocidade()" id="botao">
+        </div>
+
+        <div id="res">RESULTADO</div>
+
+    </div>
+
+    
+
+
+
+
+    <script>
+        function velocidade(){
+        var vkm = document.querySelector('input#vkm')
+        var res = document.querySelector('div#res')
+        var velokm = Number(vkm.value)
+
+        if(velokm > 70){
+            var calmulta = (velokm - 70) * 3.25
+            res.innerHTML = `A sua velocidade foi de ${velokm}Km/h ultrapassando o permitido da via. MULTADO COMÉDIA! e o valor da sua multa foi de R$ ${calmulta}`
+
+        }else{
+            res.innerHTML = `A sua velocidade foi de ${velokm}Km/h logo você ta safe parcero, dale dele dolly` 
+        }
+
+        }
+    </script>
+</body>
+</html>
